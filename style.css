@@ -415,19 +415,16 @@ footer{
 @media (max-width: 480px){
     /* Inicio de Estilos del Header y Nav */
     header {
+        width: 100%;
         height: 25vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 480px;
+        position: relative;
     }
     .logo {
         width: 125px;
         margin: 0;
-    }
-    nav {
-        display: flex;
-        /* justify-content: center; */
     }
     .nav-bar {
         display: flex;
@@ -436,7 +433,6 @@ footer{
     .nav-list {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         margin: 20px 0;
     }
@@ -454,9 +450,12 @@ footer{
     }
     .section-title {
         font-size: 30px;
+        padding: 0 10px;
     }
     .section-info {
-        font-size: 20px;
+        font-size: 18px;
+        padding: 0 10px;
+
     }
 /* Fin de Estilos de Section */
 /* Inicio de Estilos de Presentación */
@@ -483,9 +482,9 @@ footer{
 /* Fin de Estilos de Presentación */
 /* Inicio de Estilos de Mis Conocimientos */
     .skills-content {
-        width: 100%;
+        /* width: 100%; */
         display: flex;
-        /* justify-content: center; */
+        justify-content: center;
     }
     .skills-intro {
         display: flex;
@@ -493,16 +492,25 @@ footer{
         flex-direction: column;
     }
     .skills-conteiner {
-        width: 100%;
+        /* width: 100%; */
         display: flex;
-        /* justify-content: center; */
+        justify-content: center;
         flex-direction: column;
     }
-    
+    /* Fin  Estilos de Mis Conocimientos */
     .quote-text {
         padding: 0 55px;
     }
-
+    /* Inicio Estilos Proyectos */
+    .main-project-name {
+        font-size: 30px;
+    }
+    .main-proyect-info {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    /* Fin Estilos Proyectos */
+    /* Inicio Estilos Contacto */
     .contact-conteiner {
         width: 100%;
         display: flex;
@@ -511,16 +519,28 @@ footer{
     }
     .contact-info-cont {
         width: 100%;
-        max-width: 340px;
+        max-width: 325px;
+    }
+    .name-surname-form-cont {
+        display: flex;
+        flex-direction: column;
+    }
+    #nombre-form {
+        margin-bottom: 18px;
     }
     .contact-form-cont {
         width: 100%;
-        max-width: 340px;
+        max-width: 325px;
     }
-
+    #mensaje-form {
+        width: 300px;
+    }
+    /* Fin de Estilos Contacto */
+    /* Inicio Estilos Footer */
     footer {
         width: 100%;
         justify-content: center;
     }
+    /* Fin Estilos Footer */
     }
     /* Fin de Media Queries */
