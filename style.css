@@ -433,10 +433,11 @@ footer{
     /* Inicio de Estilos del Header y Nav */
     header {
         width: 100%;
-        height: 25vh;
+        min-height: 25vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         position: relative;
     }
     .logo {
@@ -485,7 +486,7 @@ footer{
         justify-content: center;
     }
     .intro-info {
-        margin: 150px 0 50px 0;
+        margin: 0px 0 50px 0;
     }
     .saludo {
         font-size: 15px;
@@ -499,18 +500,19 @@ footer{
 /* Fin de Estilos de Presentación */
 /* Inicio de Estilos de Mis Conocimientos */
     .skills-content {
-        /* width: 100%; */
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .skills-intro {
         display: flex;
         flex-direction: column;
     }
     .skills-conteiner {
-        /* width: 100%; */
+        width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
     /* Fin  Estilos de Mis Conocimientos */
