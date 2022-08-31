@@ -407,8 +407,25 @@ footer{
     height: 20vh;
     background-color: #f25e5e;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.footer-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-nav-item {
+    list-style: none;
+    margin: 0 10px 20px 10px;
+}
+.footer-nav-link {
+    text-decoration: none;
+    color: white;
+}
+.footer-nav-link:hover {
+    color: #3a4054;
 }
 /* Fin de Estilos de Footer */
 /* Inicio de Media Queries */
@@ -488,7 +505,6 @@ footer{
     }
     .skills-intro {
         display: flex;
-        /* justify-content: center; */
         flex-direction: column;
     }
     .skills-conteiner {
@@ -504,6 +520,7 @@ footer{
     /* Inicio Estilos Proyectos */
     .main-project-name {
         font-size: 30px;
+        padding: 0 10px;
     }
     .main-proyect-info {
         font-size: 15px;
