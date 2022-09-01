@@ -43,6 +43,7 @@ footer {
 /* Fin de Estilos Principales */
 /* Inicio de Estilos de la Barra de Navegación */
 .logo {
+    max-width: 130px;
     background-color: #456d84;
     color: white;
     margin-left: 70px;
@@ -84,7 +85,6 @@ nav {
     color: white;
 }
 /* Fin de Estilos de la Barra de Navegación */
-
 /* Inicio de Estilos de Sección de Presentación */
 .intro {
     margin-bottom: 100px;
@@ -328,7 +328,7 @@ nav {
     border-radius: 8px;
 }
 .contact-info-cont {
-    width: 400px;
+    max-width: 400px;
     margin-right: 60px;
 }
 .contact-text-description {
@@ -355,7 +355,7 @@ nav {
     padding-right: 10px;
 }
 .contact-form-cont {
-    width: 400px;
+    max-width: 400px;
 }
 .contact-form {
     display: flex;
@@ -370,6 +370,7 @@ nav {
 }
 .name-surname-form-title, .email-form-title, .mensaje-form-title {
     margin-bottom: 10px;
+    display: block;
 }
 .email-form-cont, .mensaje-form-cont {
     margin-top: 18px;
@@ -458,7 +459,6 @@ footer{
         margin: 8px 0;
         font-size: 15px;
     }
-/* Fin de Estilos de Header y Nav */
 /* Inicio de Estilos de Section */
     section {
         width: 100%;
@@ -475,7 +475,6 @@ footer{
         padding: 0 10px;
 
     }
-/* Fin de Estilos de Section */
 /* Inicio de Estilos de Presentación */
     .intro-img {
         width: 200px;
@@ -493,11 +492,11 @@ footer{
     }
     .name {
         font-size: 30px;
+        text-align: center;
     }
     .name-info {
         font-size: 15px;
     }
-/* Fin de Estilos de Presentación */
 /* Inicio de Estilos de Mis Conocimientos */
     .skills-content {
         display: flex;
@@ -515,20 +514,19 @@ footer{
         align-items: center;
         flex-direction: column;
     }
-    /* Fin  Estilos de Mis Conocimientos */
+    /* Inicio Estilos Quote */
     .quote-text {
         padding: 0 55px;
     }
     /* Inicio Estilos Proyectos */
     .main-project-name {
         font-size: 30px;
-        padding: 0 10px;
+        margin: 5px 25px;
     }
-    .main-proyect-info {
-        font-size: 15px;
-        padding: 0 10px;
+    .main-project-info {
+        font-size: 18px;
+        margin: 25px 25px 30px 25px;
     }
-    /* Fin Estilos Proyectos */
     /* Inicio Estilos Contacto */
     .contact-conteiner {
         width: 100%;
@@ -554,12 +552,53 @@ footer{
     #mensaje-form {
         width: 300px;
     }
-    /* Fin de Estilos Contacto */
     /* Inicio Estilos Footer */
     footer {
+        max-height: 25vh;
         width: 100%;
         justify-content: center;
     }
-    /* Fin Estilos Footer */
     }
-    /* Fin de Media Queries */
+    @media (max-width: 880px){
+        /* Inicio Estilos Header y Nav */
+        header {
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 0 30px 0;
+        }
+        .logo {
+            margin: 5px 0 30px 0;
+        }
+        .nav-list {
+            margin: 0;
+        }
+        /* Inicio Estilos Presentación */
+        .intro-conteiner {
+            margin: 50px 0 0 0;
+        }
+        .intro-img {
+            width: 400px;
+        }
+        /* Inicio Estilos de Conocimientos */
+        .skills-conteiner {
+            max-width: 700px;
+        }
+        /* Inicio Estilos Quote */
+        .quote-text {
+            margin: 30px 30px;
+        }
+        /* Inicio Estilos Proyectos */
+        .main-proyect-info {
+            margin: 30x 30px 60px 30px;
+        }
+        /* Inicio Estilos Contacto */
+        .contact-conteiner {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-info-cont {
+            margin: 0 0 30px 0;
+        }
+    }
+    /* Fin de Media Queries */    
