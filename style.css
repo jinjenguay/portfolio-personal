@@ -481,7 +481,6 @@ footer{
     .section-info {
         font-size: 18px;
         padding: 0 15px;
-
     }
 /* Inicio de Estilos de Presentación */
     .intro-img {
@@ -570,15 +569,13 @@ footer{
         justify-content: center;
     }
     }
-    @media (max-width: 880px){
+    @media (max-width: 680px){
         /* Inicio Estilos Header y Nav */
         header {
             align-items: center;
             flex-direction: column;
+            position: relative;
             padding: 20px 0 30px 0;
-        }
-        .logo {
-            margin: 5px 0 30px 0;
         }
         .nav-list {
             margin: 0;
@@ -588,8 +585,41 @@ footer{
             align-items: center;
             justify-content: center;
         }
+        /* Inicio Estilos Presentación */
+        .intro-img {
+            width: 300px;
+        }
+        /* Inicio Estilos de Section */
+        .section-info {
+            padding: 0 25px;
+        }
+        /* Inicio Estilos de Mis conocimientos */
+        .skills-conteiner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 880px){
+        /* Inicio Estilos Header y Nav */
+        header {
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            padding: 20px 0 30px 0;
+        }
+        .logo {
+            margin: 5px 0 30px 0;
+        }
+        .nav-list {
+            margin: 0;
+        }
         .nav-list-item {  
-            margin: 15px;
+            margin: 10px;
+        }
+        main {
+            margin-top: 100px;
         }
         /* Inicio Estilos Presentación */
         .intro-conteiner {
