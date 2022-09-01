@@ -137,6 +137,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .skills-intro {
     text-align: center;
@@ -180,7 +181,8 @@ nav {
 /* Inicio de Estilos Quote */
 .quote {
     background-color: #f25e5e;
-    height: 400px;
+    min-height: 400px;
+    max-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -382,16 +384,19 @@ nav {
     border-style: none;
 }
 #mensaje-form {
-    width: 380px;
-    height: 180px;
     padding: 10px;
     background-color: #f5f4f3;
     border-radius: 15px;
     border-style: none;
 }
+#nombre-form:focus, #apellido-form:focus, #email-form:focus, #mensaje-form:focus {
+    border: 1px solid #f25e5e;
+    outline: none;
+}
 .send-form-button {
+    max-width: 130px;
     font-size: 15px;
-    padding: 18px 32px;
+    padding: 15px 30px;
     margin-top: 25px;
     border-radius: 50px;
     border-style: none;
@@ -459,7 +464,10 @@ footer{
         margin: 8px 0;
         font-size: 15px;
     }
-/* Inicio de Estilos de Section */
+/* Inicio de Estilos de Main y Section */
+    main {
+        margin-top: 30px;
+    }
     section {
         width: 100%;
         display: flex;
@@ -472,7 +480,7 @@ footer{
     }
     .section-info {
         font-size: 18px;
-        padding: 0 10px;
+        padding: 0 15px;
 
     }
 /* Inicio de Estilos de Presentación */
@@ -486,6 +494,10 @@ footer{
     }
     .intro-info {
         margin: 0px 0 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .saludo {
         font-size: 15px;
@@ -493,6 +505,7 @@ footer{
     .name {
         font-size: 30px;
         text-align: center;
+        margin: 0 0 20px 0;
     }
     .name-info {
         font-size: 15px;
@@ -516,7 +529,7 @@ footer{
     }
     /* Inicio Estilos Quote */
     .quote-text {
-        padding: 0 55px;
+        padding: 0 40px;
     }
     /* Inicio Estilos Proyectos */
     .main-project-name {
@@ -529,13 +542,12 @@ footer{
     }
     /* Inicio Estilos Contacto */
     .contact-conteiner {
-        width: 100%;
         display: flex;
         flex-direction: column;
+        margin: 140px 0 140px 0;
         padding: 80px 20px;
     }
     .contact-info-cont {
-        width: 100%;
         max-width: 325px;
     }
     .name-surname-form-cont {
@@ -546,7 +558,6 @@ footer{
         margin-bottom: 18px;
     }
     .contact-form-cont {
-        width: 100%;
         max-width: 325px;
     }
     #mensaje-form {
@@ -571,6 +582,14 @@ footer{
         }
         .nav-list {
             margin: 0;
+            max-width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-list-item {  
+            margin: 15px;
         }
         /* Inicio Estilos Presentación */
         .intro-conteiner {
@@ -581,15 +600,15 @@ footer{
         }
         /* Inicio Estilos de Conocimientos */
         .skills-conteiner {
-            max-width: 700px;
+            max-width: 650px;
         }
         /* Inicio Estilos Quote */
         .quote-text {
             margin: 30px 30px;
         }
         /* Inicio Estilos Proyectos */
-        .main-proyect-info {
-            margin: 30x 30px 60px 30px;
+        .main-project-info {
+            margin: 30px 30px 60px 30px;
         }
         /* Inicio Estilos Contacto */
         .contact-conteiner {
