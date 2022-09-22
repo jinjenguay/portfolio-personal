@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+:root {
+    --colorPrimario: #f25e5e;
+    --colorSecundario: #3a4054;
+    --colorTerceriario: #456d84;
+    --colorHover: #899ca3;
+    --backgroundGrey: #f5f4f3;
+}
 * {
     font-family: 'Varela Round', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 /* Inicio de Estilos Pincipales */
 /* Secciones, header, main, footer */
 header {
@@ -31,7 +37,7 @@ main {
 }
 .section-title {
     font-size: 50px;
-    color: #3a4054;
+    color: var(--colorSecundario);
 }
 .section-info {
     font-size: 18px;
@@ -44,7 +50,7 @@ footer {
 /* Inicio de Estilos de la Barra de Navegación */
 .logo {
     max-width: 130px;
-    background-color: #456d84;
+    background-color: var(--colorTerceriario);
     color: white;
     margin-left: 70px;
     padding: 12px 24px;
@@ -67,21 +73,21 @@ nav {
     font-size: 18px;
 }
 .nav-list-item-link {
-    color: #f25e5e;
+    color: var(--colorPrimario);
     text-decoration: none;
 }
 .nav-list-item-link:hover {
-    color: #3a4054;
+    color: var(--colorSecundario);
 }
 .contacto-button {
-    background-color: #f25e5e;
+    background-color: var(--colorPrimario);
     color: white;
     padding: 12px 24px;
     border-radius: 115px;
     transition: 0.4s;
 }
 .contacto-button:hover {
-    background-color: #899ca3;
+    background-color: var(--colorHover);
     color: white;
 }
 /* Fin de Estilos de la Barra de Navegación */
@@ -104,16 +110,16 @@ nav {
 .saludo {
     font-size: 25px;
     font-weight: lighter;
-    color: #3a4054;
+    color: var(--colorSecundario);
 }
 .name-info {
     font-size: 25px;
     font-weight: lighter;
-    color: #3a4054;
+    color: var(--colorSecundario);
 }
 .intro-button {
     font-size: 15px;
-    background-color: #f25e5e;
+    background-color: var(--colorPrimario);
     text-decoration: none;
     color: white;
     padding: 10px 20px;
@@ -121,16 +127,21 @@ nav {
     transition: 0.4s;
 }
 .intro-button:hover {
-    background-color: #899ca3;
+    background-color: var(--colorHover);
     color: white;
 }
-.intro-img {
+.intro-img-cont {
     width: 550px;
+    height: 550px;
+}
+.intro-img {
+    width: 100%;
+    object-fit: cover;
 }
 /* Fin de Estilos de Sección de Presentación */
 /* Inicio de Estilos de Sección de Conocimientos */
 .skills {
-    background-color: #f5f4f3;
+    background-color: var(--backgroundGrey);
     padding-bottom: 170px;
 }
 .skills-content {
@@ -160,15 +171,15 @@ nav {
     margin: 10px;
     padding: 30px;
     background-color: white;
-    color: #f25e5e;
-    border: 2px solid #f25e5e;
+    color: var(--colorPrimario);
+    border: 2px solid var(--colorPrimario);
     border-radius: 8px;
     transition: 0.2s;
 }
 .skills-box:hover {
     box-shadow: 0 0 5px 5px rgba(196, 193, 193, 0.25);
-    border: 2px solid #456d84;
-    color: #456d84;
+    border: 2px solid var(--colorTerceriario);
+    color: var(--colorTerceriario);
 }
 .skills-icons {
     font-size: 85px;
@@ -180,7 +191,7 @@ nav {
 /* Fin de Estilos de Sección de Conocimientos */
 /* Inicio de Estilos Quote */
 .quote {
-    background-color: #f25e5e;
+    background-color: var(--colorPrimario);
     min-height: 400px;
     max-height: 500px;
     display: flex;
@@ -197,7 +208,7 @@ nav {
 .quote-text {
     font-size: 20px;
     font-weight: bold;
-    color: #3a4054;
+    color: var(--colorSecundario);
     margin: 30px 0;
 }
 .quote-author {
@@ -254,14 +265,14 @@ nav {
 .visitar-main-project-button {
     text-decoration: none;
     font-size: 16px;
-    background-color: #f25e5e;
+    background-color: var(--colorPrimario);
     color: white;
     padding: 14px 28px;
     border-radius: 115px;
     transition: 0.4s;
 }
 .visitar-main-project-button:hover {
-    background-color: #899ca3;
+    background-color: var(--colorHover);
     color: white;
 }
 .other-projects {
@@ -284,23 +295,23 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #f25e5e;
+    color: var(--colorPrimario);
     width: 300px;
     height: 300px;
     margin: 20px;
-    border: 2px solid #f25e5e;
+    border: 2px solid var(--colorPrimario);
     border-radius: 8px;
     transition: 0.2s;
 }
 .other-projects-box:hover {
     box-shadow: 0 0 5px 5px rgba(196, 193, 193, 0.25);
-    border: 2px solid #456d84;
-    color: #456d84;
+    border: 2px solid var(--colorTerceriario);
+    color: var(--colorTerceriario);
 }
 .other-proyects-anchor {
     text-decoration: none;
     text-align: center;
-    color: #3a4054;
+    color: var(--colorSecundario);
 }
 .other-projects-img-cont {
     width: 250px;
@@ -318,7 +329,7 @@ nav {
 /* Fin de Estilos de la Sección de Proyectos */
 /* Inicio de Estilos de la Sección de Contacto */
 .contact {
-    background-color: #f5f4f3;
+    background-color: var(--backgroundGrey);
 }
 .contact-conteiner {
     background-color: white;
@@ -326,7 +337,7 @@ nav {
     justify-content: center;
     margin: 140px 0 80px 0;
     padding: 80px 70px 70px 70px;
-    border: 1px solid #f25e5e;
+    border: 1px solid var(--colorPrimario);
     border-radius: 8px;
 }
 .contact-info-cont {
@@ -350,7 +361,7 @@ nav {
     align-items: center;
 }
 .contact-info-social-link:hover {
-    color: #f25e5e;
+    color: var(--colorPrimario);
 }
 .social-icon {
     font-size: 25px;
@@ -379,18 +390,18 @@ nav {
 }
 #nombre-form, #apellido-form, #email-form {
     padding: 10px;
-    background-color: #f5f4f3;
+    background-color: var(--backgroundGrey);
     border-radius: 50px;
     border-style: none;
 }
 #mensaje-form {
     padding: 10px;
-    background-color: #f5f4f3;
+    background-color: var(--backgroundGrey);
     border-radius: 15px;
     border-style: none;
 }
 #nombre-form:focus, #apellido-form:focus, #email-form:focus, #mensaje-form:focus {
-    border: 1px solid #f25e5e;
+    border: 1px solid var(--colorPrimario);
     outline: none;
 }
 .send-form-button {
@@ -400,22 +411,25 @@ nav {
     margin-top: 25px;
     border-radius: 50px;
     border-style: none;
-    background-color: #456d84;
-    color: #fff;
+    background-color: var(--colorTerceriario);
+    color: white;
 }
 .send-form-button:hover {
-    background-color: #899ca3;
+    background-color: var(--colorHover);
 }
 /* Fin de Estilos de la Sección de Contacto */
 /* Inicio de Estilos de Footer */
 footer{
     width: 100%;
-    height: 20vh;
-    background-color: #f25e5e;
+    padding: 25px 0 50px 0;
+    background-color: var(--colorPrimario);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.footer-nav {
+    margin: 20px 0 0 0;
 }
 .footer-nav-list {
     display: flex;
@@ -424,14 +438,33 @@ footer{
 }
 .footer-nav-item {
     list-style: none;
-    margin: 0 10px 20px 10px;
+    margin: 0 10px;
 }
 .footer-nav-link {
     text-decoration: none;
     color: white;
 }
 .footer-nav-link:hover {
-    color: #3a4054;
+    color: var(--colorSecundario);
+}
+.footer-social {
+    margin: 40px 0;
+}
+.footer-social-list {
+    display: flex;
+}
+.footer-social-item {
+    list-style: none;
+    margin: 0px 25px;
+}
+.footer-social-link {
+    color: black;
+}
+.footer-social-link:hover {
+    color: white;
+}
+.footer-social-icon {
+    font-size: 25px;
 }
 /* Fin de Estilos de Footer */
 /* Inicio de Media Queries */
@@ -483,9 +516,6 @@ footer{
         padding: 0 15px;
     }
 /* Inicio de Estilos de Presentación */
-    .intro-img {
-        width: 200px;
-    }
     .intro-conteiner {
         display: flex;
         flex-direction: column;
@@ -509,7 +539,15 @@ footer{
     .name-info {
         font-size: 15px;
     }
-/* Inicio de Estilos de Mis Conocimientos */
+    .intro-img-cont {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0 0 0;
+    }
+    /* Inicio de Estilos de Mis Conocimientos */
     .skills-content {
         display: flex;
         justify-content: center;
@@ -564,9 +602,16 @@ footer{
     }
     /* Inicio Estilos Footer */
     footer {
-        max-height: 25vh;
+        /* max-height: 25vh; */
         width: 100%;
         justify-content: center;
+    }
+    .footer-nav-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-nav-item {
+        margin: 10px 0;
     }
     }
     @media (max-width: 680px){
